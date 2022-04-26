@@ -128,7 +128,7 @@ class HentaiBot(commands.Cog):
             count = 1
             embed = discord.Embed(title='Top {0}'.format(len(items)), color=discord.Color.blue())
             for item in items:
-                embed.add_field(name='{0}'.format(count), value=item.title(Format.Pretty))
+                embed.add_field(name='{0}'.format(count), value=item.title(Format.Pretty), inline= False)
                 count += 1
             embed.set_thumbnail(url="https://ih1.redbubble.net/image.536624306.1571/flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg")
             await ctx.send(embed=embed)
