@@ -29,4 +29,4 @@ share/python-wheels/
 MANIFEST
 
 # Virtual Environment
-.env
+.\env
