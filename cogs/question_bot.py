@@ -7,7 +7,7 @@ class QuestionBot(commands.Cog):
     def __init__(self, client):
         self.client = client
         
-    @commands.command(aliases=['info'])
+    @commands.command(aliases=['ask'])
     async def free_form_question(self, ctx, *args):
         if len(args) == 0:
             await ctx.send("Please provide a question.")
