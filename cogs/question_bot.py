@@ -1,7 +1,7 @@
 from discord.ext import commands
 import discord
 
-from services.utils import free_form_question, scientific_question, short_answer
+from services.wolfram_service import free_form_question, scientific_question, short_answer
 
 class QuestionBot(commands.Cog):
     def __init__(self, client):
